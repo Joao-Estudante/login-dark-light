@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --amarelo: #FFD166;
-    --azul-escuro: #26547C;
-    --bege: #F4F1DE;
-    --branco: #EBF2FA;
+    --accent-color: #FFD166;
+    --text-color: #26547C;
+    --secondary-color: #F4F1DE;
+    --bg-color: #EBF2FA;
 }
 
 *, *::after, *::before {
@@ -16,14 +16,14 @@
 
 
 html {
-    background-color: var(--branco);
+    background-color: var(--bg-color);
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 }
 
 main {
     font-size: 1.6rem;
-    color: var(--azul-escuro);
+    color: var(--dark-color);
     size: 100%;
     height: 75rem;
     
@@ -102,9 +102,9 @@ form {
 
     font-size: 1.2rem;
 
-    border: .1rem solid var(--azul-escuro);
+    border: .1rem solid var(--dark-color);
     border-radius: 5px;
-    color: var(--azul-escuro);
+    color: var(--dark-color);
 
     padding: .8rem;
     margin-top: .8rem;
@@ -114,7 +114,7 @@ form {
 }
 
 .form-field input::placeholder {
-    color: var(--azul-escuro);
+    color: var(--dark-color);
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -138,7 +138,7 @@ form {
 
 #pw-forget a, #pw-forget:visited {
     text-decoration: none;
-    color: var(--azul-escuro);
+    color: var(--dark-color);
     
 }
 
@@ -148,8 +148,8 @@ form button {
     border: none;
     border-radius: 5px;
 
-    background-color: var(--amarelo);
-    color: var(--azul-escuro);
+    background-color: var(--accent-color);
+    color: var(--dark-color);
     font-weight: 700;
 }
 
