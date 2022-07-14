@@ -7,6 +7,13 @@
     --bg-color: #EBF2FA;
 }
 
+.darkmode {
+    --accent-color: #FFD166;
+    --text-color: #F4F1DE;
+    --secondary-color: #26547C;
+    --bg-color: #00253E;
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
     padding: 0;
@@ -21,11 +28,15 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: var(--bg-color);
+}
+
 main {
     font-size: 1.6rem;
-    color: var(--dark-color);
+    color: var(--text-color);
     size: 100%;
-    height: 75rem;
+    height: 56rem;
     
 
     display: flex;
@@ -35,8 +46,8 @@ main {
 
 #card {
     width: 45rem;
-    height: 58rem;
-    background-color: var(--bege);
+    height: 38rem;
+    background-color: var(--bg-color);
     border-radius: 1rem;
     box-shadow: 0 10rem 8rem rgba(0, 0, 0, 0.07),
                 0px 4rem 3rem rgba(0, 0, 0, 0.05), 
@@ -68,21 +79,6 @@ main {
     align-items: center;
 }
 
-#user-image {
-    background-color: #FFD166;
-    width: 15rem;
-    height: 15rem;
-
-    border-radius: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 0.8;
-
-    margin-bottom: 5rem;
-}
 
 form {
     display: block;
@@ -102,21 +98,23 @@ form {
 
     font-size: 1.2rem;
 
-    border: .1rem solid var(--dark-color);
+    border: .1rem solid var(--text-color);
     border-radius: 5px;
-    color: var(--dark-color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
 
     padding: .8rem;
     margin-top: .8rem;
 
-    opacity: .4;
+    opacity: 1;
 
 }
 
 .form-field input::placeholder {
-    color: var(--dark-color);
+    color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 500;
+    opacity: .6;
 }
 
 .form-field input:focus{
@@ -126,7 +124,7 @@ form {
 }
 
 .form-field input:focus::placeholder {
-    opacity: .4;
+    opacity: .6;
 }
 
 #pw-forget {
@@ -138,7 +136,7 @@ form {
 
 #pw-forget a, #pw-forget:visited {
     text-decoration: none;
-    color: var(--dark-color);
+    color: var(--text-color);
     
 }
 
@@ -149,10 +147,29 @@ form button {
     border-radius: 5px;
 
     background-color: var(--accent-color);
-    color: var(--dark-color);
+    color: var(--text-color);
     font-weight: 700;
 }
 
 form button:hover{
     cursor:pointer;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.6rem;
+
+    padding: 1rem;
+
+    display: flex;
+    justify-content: end;
+}
+
+header p {
+    cursor:pointer;
+    text-decoration: underline;
+
+    font-weight: 600;
+    color: var(--text-color);
 }
